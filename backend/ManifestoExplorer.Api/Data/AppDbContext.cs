@@ -11,9 +11,9 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Party>().HasIndex( p => p.Name).IsUnique();
+        modelBuilder.Entity<Party>().HasIndex(p => p.Name).IsUnique();
         modelBuilder.Entity<Party>().HasData(
-            new { Id = Guid.Parse("10000000-0000-0000-0000-000000000001"), Name = "African National Congress", Abbreviation = "ANC", Description = "Political party in South Africa" },
+            new { Id = Guid.Parse("10000000-0000-0000-0000-000000000001"), Name = "African National Congress", Abbreviation = "ANC", Description = "Political party in South Africa." },
             new { Id = Guid.Parse("10000000-0000-0000-0000-000000000002"), Name = "Democratic Alliance", Abbreviation = "DA", Description = "Political party in South Africa." },
             new { Id = Guid.Parse("10000000-0000-0000-0000-000000000003"), Name = "Economic Freedom Fighters", Abbreviation = "EFF", Description = "Political party in South Africa." },
             new { Id = Guid.Parse("10000000-0000-0000-0000-000000000004"), Name = "Inkatha Freedom Party", Abbreviation = "IFP", Description = "Political party in South Africa." },

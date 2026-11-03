@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ManifestoExplorer.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d119e5c9a6ffc951ad3c60d6ae993f863ab6e3e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ca7944472ba192811621c13d7f05e8d7e0bf9ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("ManifestoExplorer.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ManifestoExplorer.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

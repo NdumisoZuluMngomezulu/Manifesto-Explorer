@@ -1,4 +1,3 @@
-using System.Reflection.Metadata;
 using ManifestoExplorer.Api.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +15,7 @@ public class PartiesController(AppDbContext db) : ControllerBase
             .Select(p => new { p.Id, p.Name, p.Abbreviation, p.Description, p.WebsiteUrl,
                 ManifestoCount = p.Manifestos.Count, VerifiedPolicyCount = p.Manifestos.SelectMany(m => m.Policies).Count(x => x.VerificationStatus == "Verified") })
             .OrderBy(p => p.Name).ToListAsync(ct);
-        return Ok(parties);    
+        return Ok(parties);
     }
 
     [HttpGet("{id:guid}")]
